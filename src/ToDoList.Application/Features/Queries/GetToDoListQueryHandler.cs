@@ -24,7 +24,7 @@ namespace ToDoList.Application.Features.Queries
             {
                 Id = item.Id,
                 Title = item.Title,
-                Status = item.Status
+                DateCreated = item.DateCreated
             }).ToList();
         }
     }

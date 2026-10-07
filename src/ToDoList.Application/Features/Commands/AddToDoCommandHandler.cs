@@ -22,7 +22,7 @@ namespace ToDoList.Application.Features.Commands
             {
                 Id = toDoItem.Id,
                 Title = toDoItem.Title,
-                Status = toDoItem.Status
+                DateCreated = toDoItem.DateCreated  
             };
         }
     }

@@ -6,8 +6,8 @@ namespace ToDoList.Infrastructure
     public sealed class ToDoListRepository : IToDoListRepository
     {
         private readonly List<ToDoItem> _toDoItems = new List<ToDoItem>() { 
-            new ToDoItem { Id = Guid.NewGuid(), Title = "Sample Task", Status = "Pending" }, 
-            new ToDoItem { Id = Guid.NewGuid(), Title = "Another Task", Status = "Completed" } 
+            new ToDoItem { Id = Guid.NewGuid(), Title = "Sample Task", DateCreated = DateTime.UtcNow }, 
+            new ToDoItem { Id = Guid.NewGuid(), Title = "Another Task", DateCreated = DateTime.UtcNow } 
         };
 
         public Task<List<ToDoItem>> GetToDoItemsAsync(CancellationToken cancellationToken)
@@ -17,7 +17,7 @@ namespace ToDoList.Infrastructure
 
         public Task<ToDoItem> AddToDoItemAsync(string title, CancellationToken cancellationToken)
         {
-            var newItem = new ToDoItem { Id = Guid.NewGuid(), Title = title, Status = "Pending" };
+            var newItem = new ToDoItem { Id = Guid.NewGuid(), Title = title, DateCreated = DateTime.UtcNow };
             _toDoItems.Add(newItem);
             return Task.FromResult(newItem);
         }
