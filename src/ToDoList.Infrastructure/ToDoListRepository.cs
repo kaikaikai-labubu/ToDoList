@@ -17,6 +17,10 @@ namespace ToDoList.Infrastructure
 
         public Task<ToDoItem> AddToDoItemAsync(string title, CancellationToken cancellationToken)
         {
+            if (string.IsNullOrWhiteSpace(title))
+            {
+                throw new ArgumentException("Title cannot be empty.", nameof(title));
+            }
             var newItem = new ToDoItem { Id = Guid.NewGuid(), Title = title, DateCreated = DateTime.UtcNow };
             _toDoItems.Add(newItem);
             return Task.FromResult(newItem);
