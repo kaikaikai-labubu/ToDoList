@@ -4,12 +4,12 @@ using ToDoList.Infrastructure;
 
 namespace ToDoList.Application.Features.Queries
 {
-    public class GetToDoListQuery : IRequest<IList<ToDoItemDto>>
+    public sealed record GetToDoListQuery : IRequest<IList<ToDoItemDto>>
     {
         public string? Title { get; set; }
     }
 
-    public class GetToDoListQueryHandler : IRequestHandler<GetToDoListQuery, IList<ToDoItemDto>>
+    public sealed class GetToDoListQueryHandler : IRequestHandler<GetToDoListQuery, IList<ToDoItemDto>>
     {
         private readonly IToDoListRepository _repo;
 
