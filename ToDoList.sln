@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.10.12224.181 stable
+VisualStudioVersion = 18.10.12224.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Api", "src\ToDoList.Api\ToDoList.Api.csproj", "{114CDA2B-BEF1-43F6-B5FD-6BBB1970C6A2}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Domain", "src\ToDoList.Domain\ToDoList.Domain.csproj", "{2DD6E5DD-ED54-4920-B183-182C56F803DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Infrastructure", "src\ToDoList.Infrastructure\ToDoList.Infrastructure.csproj", "{BF2508E2-31E7-4C44-B203-F198A3F2125D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Application.Tests", "tests\ToDoList.Application.Tests\ToDoList.Application.Tests.csproj", "{E8B75A37-EAC8-4703-9811-5C22FD7342AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BF2508E2-31E7-4C44-B203-F198A3F2125D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF2508E2-31E7-4C44-B203-F198A3F2125D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF2508E2-31E7-4C44-B203-F198A3F2125D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B75A37-EAC8-4703-9811-5C22FD7342AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B75A37-EAC8-4703-9811-5C22FD7342AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B75A37-EAC8-4703-9811-5C22FD7342AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B75A37-EAC8-4703-9811-5C22FD7342AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
